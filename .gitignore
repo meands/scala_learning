@@ -1,0 +1,9 @@
+target
+*.class
+.vscode
+.metals
+.bsp
+.bloop
+.DS_Store
+project
+.scalafmt.conf
