@@ -6,3 +6,4 @@ target
 .bloop
 .DS_Store
 project
+.scalafmt.conf

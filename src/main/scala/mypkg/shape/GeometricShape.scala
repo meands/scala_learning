@@ -1,17 +1,13 @@
+package mypkg.shape
+
 object GeometricShape {
   def findDifference(a: GeometricShape, b: GeometricShape) =
     Math.abs(a.area - b.area)
   def findDifference(a: Circle, b: Circle) = Math.abs(a.diameter - b.diameter)
 
-  abstract class GeometricShape extends Comparable[GeometricShape] {
+  abstract class GeometricShape {
     def area: Double
     def circumference: Double
-
-    def compareTo(shape: GeometricShape): Int = {
-      if (this.area > shape.area) 1
-      else if (this.area == shape.area) 0
-      else -1
-    }
   }
 
   class Circle(radius: Double) extends GeometricShape {
